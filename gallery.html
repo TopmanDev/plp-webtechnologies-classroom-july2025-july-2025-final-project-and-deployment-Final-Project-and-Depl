@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our stunning collection of fashion designs">
+    <title>TopmanHub - Gallery</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="home.html">TopmanHub</a>
+                </div>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Our Gallery</h1>
+                <p>Explore our curated collection of fashion masterpieces</p>
+            </div>
+        </section>
+
+        <section class="slider-section">
+            <div class="container">
+                <h2 class="section-title">Featured Showcase</h2>
+
+                <div class="slider-container">
+                    <button class="slider-btn slider-btn-prev" id="prevBtn" aria-label="Previous slide">
+                        &#8249;
+                    </button>
+
+                    <div class="slider-wrapper">
+                        <div class="slider-track" id="sliderTrack">
+                            <div class="slider-slide active">
+                                <img src="images/gallary-1.jpg" alt="Summer Collection">
+                                <div class="slide-caption">
+                                    <h3>Summer Vibes</h3>
+                                    <p>Light and airy designs for warm weather</p>
+                                </div>
+                            </div>
+
+                            <div class="slider-slide">
+                                <img src="images/gallery-2.jpg" alt="Formal Elegance">
+                                <div class="slide-caption">
+                                    <h3>Formal Elegance</h3>
+                                    <p>Sophisticated styles for special occasions</p>
+                                </div>
+                            </div>
+
+                            <div class="slider-slide">
+                                <img src="images/gallery-3.jpg" alt="Casual Comfort">
+                                <div class="slide-caption">
+                                    <h3>Casual Comfort</h3>
+                                    <p>Everyday wear that doesn't compromise on style</p>
+                                </div>
+                            </div>
+
+                            <div class="slider-slide">
+                                <img src="images/gallery-4.jpg" alt="Urban Street">
+                                <div class="slide-caption">
+                                    <h3>Urban Street</h3>
+                                    <p>Contemporary designs for the modern trendsetter</p>
+                                </div>
+                            </div>
+
+                            <div class="slider-slide">
+                                <img src="images/gallery-5.jpg" alt="Winter Warmth">
+                                <div class="slide-caption">
+                                    <h3>Winter Warmth</h3>
+                                    <p>Cozy and stylish cold-weather essentials</p>
+                                </div>
+                            </div>
+
+                            <div class="slider-slide">
+                                <img src="images/gallery-6.jpeg" alt="Classic Timeless">
+                                <div class="slide-caption">
+                                    <h3>Classic Timeless</h3>
+                                    <p>Enduring styles that never go out of fashion</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="slider-btn slider-btn-next" id="nextBtn" aria-label="Next slide">
+                        &#8250;
+                    </button>
+                </div>
+
+                <div class="slider-indicators" id="sliderIndicators"></div>
+            </div>
+        </section>
+
+        <section class="gallery-grid-section">
+            <div class="container">
+                <h2 class="section-title">Complete Collection</h2>
+
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="casual">Casual</button>
+                    <button class="filter-btn" data-filter="formal">Formal</button>
+                    <button class="filter-btn" data-filter="seasonal">Seasonal</button>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="formal">
+                        <img src="images/gallary-1.jpg" alt="formal Style 1">
+                        <div class="gallery-overlay">
+                            <h3>Summer Collection</h3>
+                            <p>Casual</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="formal">
+                        <img src="images/gallery-2.jpg" alt="Formal Style 1">
+                        <div class="gallery-overlay">
+                            <h3>Evening Wear</h3>
+                            <p>Formal</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="casual">
+                        <img src="images/gallery-3.jpg" alt="Casual Style 2">
+                        <div class="gallery-overlay">
+                            <h3>Everyday Comfort</h3>
+                            <p>Casual</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="casual">
+                        <img src="images/gallery-4.jpg" alt="Urban Style">
+                        <div class="gallery-overlay">
+                            <h3>Urban Collection</h3>
+                            <p>Casual</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="seasonal">
+                        <img src="images/gallery-5.jpg" alt="Winter Collection">
+                        <div class="gallery-overlay">
+                            <h3>Winter Essentials</h3>
+                            <p>Seasonal</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="formal">
+                        <img src="images/gallery-6.jpeg" alt="Classic Formal">
+                        <div class="gallery-overlay">
+                            <h3>Timeless Elegance</h3>
+                            <p>Formal</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="casual">
+                        <img src="images/product-1.jpg" alt="Casual Style 3">
+                        <div class="gallery-overlay">
+                            <h3>Beach Wear</h3>
+                            <p>Casual</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="formal">
+                        <img src="images/product-2.jpg" alt="Professional Wear">
+                        <div class="gallery-overlay">
+                            <h3>Business Attire</h3>
+                            <p>Formal</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="casual">
+                        <img src="images/product-3.jpg" alt="Street Style">
+                        <div class="gallery-overlay">
+                            <h3>Street Fashion</h3>
+                            <p>Casual</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>StyleHub</h3>
+                    <p>Your destination for premium fashion and timeless style.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: info@Topmanhub.com</p>
+                    <p>Phone: +234 8144242431</p>
+                    <p>Address: No 6, Similoluwa Street, Ado-Ekiti</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TopmanHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
